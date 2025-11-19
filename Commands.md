@@ -14,4 +14,36 @@ docker ps
 docker stop $(docker ps -q)
 ```
 
+# פקודות נוספות
+
+הרמת הסביבה (הרצה ברקע):
+
+```
+docker compose up -d
+```
+
+צפייה בלוגים של קונטיינר ספציפי (ציין את שם הקונטיינר):
+
+```
+docker logs dev-server-1
+```
+
+הוספת -f לצפייה בזמן אמת:
+
+```
+docker logs -f dev-server-1
+```
+
+צפייה בלוגים של כל הסביבה (כל השירותים) ולעקיבה בזמן אמת:
+
+```
+docker compose logs -f
+```
+
+אפשר להגביל לשירות אחד:
+
+```
+docker compose logs -f <service-name>
+```
+
 # פקודות לינוקס פשוטות
