@@ -31,7 +31,7 @@ docker logs dev-server-1
 הוספת -f לצפייה בזמן אמת:
 
 ```
-docker logs -f dev-server-1
+docker logs -f <service-name>
 ```
 
 צפייה בלוגים של כל הסביבה (כל השירותים) ולעקיבה בזמן אמת:
